@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math For Kids</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Buttons -->
+    <div class="sidebar">
+        <button class="op-btn" data-op="+">+</button>
+        <button class="op-btn" data-op="-">-</button>
+        <button class="op-btn" data-op="×">×</button>
+        <button class="op-btn" data-op="÷">÷</button>
+        <button class="op-btn" data-op="random">🎲</button>
+    </div>
+
+    <!-- Main Box -->
+    <div class="box">
+
+        <div class="top-row">
+            <div class="left">
+                <h1>
+                    <span id="num1">2</span> <span id="op-symbol">+</span> <span id="num2">2</span> =
+                </h1>
+                <!--Generate na button-->
+                <button class="generate" id="generateBtn">
+                    Generate
+                </button>
+            </div>
+
+            <div class="right">
+                <input type="text" id="answerInput" inputmode="numeric">
+
+                <button class="check" id="checkBtn">
+                    Check
+                </button>
+            </div>
+        </div>
+
+        <div class="feedback" id="feedback"></div>
+        <div class="explanation" id="explanation"></div>
+
+    </div>
+
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>
